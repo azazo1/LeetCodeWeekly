@@ -1,4 +1,4 @@
-/// https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-i/
+/// https://leetcode.cn/problems/count-pairs-that-form-a-complete-day-ii/
 ///
 /// 给你一个整数数组 hours，表示以 **小时** 为单位的时间，
 /// 返回一个整数，表示满足 i < j 且 hours\[i\] + hours\[j\]
@@ -10,21 +10,25 @@
 struct Solution {}
 
 impl Solution {
-    pub fn count_complete_day_pairs(hours: Vec<i32>) -> i32 {
-        let mut cnt = 0;
+    pub fn count_complete_day_pairs(hours: Vec<i32>) -> i64 {
+        let mut ans = 0;
+        let mut cnt = [0; 24];
         for i in 0..hours.len() {
-            for j in i + 1..hours.len() {
-                if (hours[i] + hours[j]) % 24 == 0 {
-                    cnt += 1;
-                }
-            }
+            ans += cnt[((24 - hours[i] % 24) % 24) as usize];
+            cnt[(hours[i] % 24) as usize] += 1;
         }
-        cnt
+        ans
     }
 }
 
-pub fn main() {
-    let hours = vec![12, 12, 30, 24, 24];
-    let rst = Solution::count_complete_day_pairs(hours);
-    println!("{rst}");
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        let hours = vec![12, 12, 30, 24, 24];
+        let rst = Solution::count_complete_day_pairs(hours);
+        assert_eq!(rst, 2);
+    }
 }
