@@ -38,12 +38,14 @@ impl TimeoutSolution {
 }
 
 impl Solution {
-    pub fn count_of_peaks(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {}
+    pub fn count_of_peaks(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
+        vec![]
+    }
 }
 
 #[cfg(test)]
 mod tests {
-    use crate::week402::peaks_in_array::Solution;
+    use crate::weekly::week402::peaks_in_array::Solution;
 
     #[test]
     pub fn test() {
