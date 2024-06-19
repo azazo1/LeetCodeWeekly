@@ -1,1 +1,1 @@
-pub mod week402;
+pub mod weekly;

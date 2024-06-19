@@ -2,4 +2,5 @@
 
 pub mod count_pairs_that_form_a_complete_day_i;
 pub mod count_pairs_that_form_a_complete_day_ii;
-mod maximum_total_damage_with_spell_casting;
+pub mod maximum_total_damage_with_spell_casting;
+pub mod peaks_in_array;
