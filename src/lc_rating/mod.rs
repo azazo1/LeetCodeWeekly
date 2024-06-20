@@ -6,3 +6,4 @@ mod lc_1118_find_lucky_integer_in_an_array;
 mod lc_1121_shuffle_the_array;
 mod lc_1121_maximum_product_of_two_elements_in_an_array;
 mod lc_1126_check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
+mod lc_1129_number_of_students_doing_homework_at_a_given_time;
