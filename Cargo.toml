@@ -9,3 +9,4 @@ criterion = "0.5.1"
 [[bench]]
 name = "my_bench"
 harness = false
+[dependencies]

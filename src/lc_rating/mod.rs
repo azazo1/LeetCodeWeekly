@@ -12,3 +12,8 @@ pub mod lc_1133_concatenation_of_array;
 pub mod lc_1135_type_of_triangle;
 pub mod lc_1139_count_negative_numbers_in_a_sorted_matrix;
 pub mod lc_1140_find_numbers_with_even_number_of_digits;
+mod lc_1140_divisible_and_non_divisible_sums_difference;
+mod lc_1141_subtract_the_product_and_sum_of_digits_of_an_integer;
+mod lc_1142_number_of_employees_who_met_the_target;
+mod lc_1143_n_th_tribonacci_number;
+mod lc_1145_maximum_product_difference_between_two_pairs;
