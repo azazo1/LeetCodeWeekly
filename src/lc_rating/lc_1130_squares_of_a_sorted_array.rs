@@ -81,7 +81,15 @@ impl Solution {
     }
 }
 
-pub struct Solution;
+struct Solution;
+#[cfg(test)]
+pub struct TestSolution;
+#[cfg(test)]
+impl TestSolution {
+    pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
+        Solution::sorted_squares(nums)
+    }
+}
 
 #[cfg(test)]
 mod tests {
